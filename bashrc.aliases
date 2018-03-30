@@ -1,0 +1,2 @@
+alias em="GDK_SCALE= emacsclient -n -c -a \"\""
+alias em-kill="emacsclient --eval '(kill-emacs)'"
