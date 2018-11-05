@@ -5,6 +5,8 @@ set -e
 sudo wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo -P /etc/yum.repos.d/
 # Install Rpmfusion repo
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+# Update cache for package installs
+sudo dnf makecache
 # grab all packages to install
 sudo dnf install $(cat fedora.packages) -y
 
