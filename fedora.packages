@@ -27,6 +27,7 @@ net-tools
 openssh-server
 patch
 qt
+shutter
 simplescreenrecorder
 tree
 chrome-gnome-shell
@@ -35,7 +36,6 @@ cmake
 clang
 dkms
 gnome-tweak-tool
-emacs
 nano
 virtualbox
 virtualbox-guest-additions-iso
