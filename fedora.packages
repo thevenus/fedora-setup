@@ -16,3 +16,8 @@ emacs
 clang
 kernel-devel
 kernel-headers
+nano
+git
+virtualbox
+virtualbox-guest-additions-iso
+virtualbox-ext-pack
