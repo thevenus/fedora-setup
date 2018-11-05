@@ -1,9 +1,10 @@
 #!/usr/bin/bash
-
+cd ~
 set -e
 # First we setup the repositories so we can install lots of stuff
 # Set Virtual Box repo
 sudo wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo -P /etc/yum.repos.d/
+wget https://raw.githubusercontent.com/ChrisTitusTech/fedora-setup/master/fedora.packages
 # Install Google Chrome repo
 sudo dnf install fedora-workstation-repositories -y
 # Install Rpmfusion repo
