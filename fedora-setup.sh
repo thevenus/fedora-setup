@@ -14,9 +14,10 @@ sudo dnf makecache
 # grab all packages to install
 sudo dnf install $(cat fedora.packages) -y
 
-git clone https://github.com/syl20bnr/spacemacs.git ~/.emacs.d
-cp spacemacs.el ~/.spacemacs
-
+#Custom shell prompt with aliases Source: https://www.linuxquestions.org/questions/linux-general-1/ultimate-prompt-and-bashrc-file-4175518169/
 cat bashrc.aliases >> ~/.bashrc
+
+#Disable Weyland and use Xorg
+sed -i '/WeylandEnable/s/^#//g' /etc/gdm/custom.conf
 
 sudo dnf upgrade -y
