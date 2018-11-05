@@ -5,6 +5,7 @@ set -e
 # Set Virtual Box repo
 sudo wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo -P /etc/yum.repos.d/
 wget https://raw.githubusercontent.com/ChrisTitusTech/fedora-setup/master/fedora.packages
+wget https://raw.githubusercontent.com/ChrisTitusTech/fedora-setup/master/bashrc.aliases
 # Install Google Chrome repo
 sudo dnf install fedora-workstation-repositories -y
 # Install Rpmfusion repo
@@ -19,7 +20,7 @@ sudo dnf makecache
 sudo dnf install $(cat ~/fedora.packages) -y
 
 #Custom shell prompt with aliases Source: https://www.linuxquestions.org/questions/linux-general-1/ultimate-prompt-and-bashrc-file-4175518169/
-cat bashrc.aliases >> ~/.bashrc
+cat ~/bashrc.aliases >> ~/.bashrc
 
 #Disable Weyland and use Xorg
 sudo sed -i '/WeylandEnable/s/^#//g' /etc/gdm/custom.conf
