@@ -8,8 +8,9 @@ sudo wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo -P 
 sudo dnf install fedora-workstation-repositories -y
 # Install Rpmfusion repo
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
-# enable mosquito/aton
-sudo dnf copr enable mosquito/atom -y
+# Install Atom repo
+sudo rpm --import https://packagecloud.io/AtomEditor/atom/gpgkey
+sudo sh -c 'echo -e "[Atom]\nname=Atom Editor\nbaseurl=https://packagecloud.io/AtomEditor/atom/el/7/\$basearch\nenabled=1\ngpgcheck=0\nrepo_gpgcheck=1\ngpgkey=https://packagecloud.io/AtomEditor/atom/gpgkey" > /etc/yum.repos.d/atom.repo'
 # Update cache for package installs
 sudo dnf makecache
 
