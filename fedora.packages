@@ -13,6 +13,7 @@ gnome-tweak-tool
 google-chrome-stable
 htop
 iproute
+joe
 kernel-devel
 kernel-headers
 lame
@@ -21,11 +22,13 @@ libtool
 make
 mc
 mpv
+multitail
 net-tools
 openssh-server
 patch
 qt
 simplescreenrecorder
+tree
 chrome-gnome-shell
 ctags
 cmake
