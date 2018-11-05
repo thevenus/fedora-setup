@@ -8,6 +8,11 @@ gcc-c++
 glibc-devel
 libtool
 make
+patch
+libgomp
+glibc-headers
+glibc-devel
+dkms
 ctags
 cmake
 clang
