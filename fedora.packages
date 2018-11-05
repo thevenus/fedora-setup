@@ -25,6 +25,7 @@ openssh-server
 patch
 qt
 simplescreenrecorder
+chrome-gnome-shell
 ctags
 cmake
 clang
