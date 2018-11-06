@@ -42,6 +42,4 @@ ctags
 cmake
 clang
 dkms
-virtualbox
-virtualbox-guest-additions-iso
-virtualbox-ext-pack
+VirtualBox
