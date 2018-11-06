@@ -28,6 +28,8 @@ net-tools
 openssh-server
 patch
 qt
+remmina
+remmina-plugins-rdp
 shutter
 simplescreenrecorder
 tree
