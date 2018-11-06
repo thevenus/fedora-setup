@@ -16,7 +16,9 @@ sudo sh -c 'echo -e "[Atom]\nname=Atom Editor\nbaseurl=https://packagecloud.io/A
 # Update cache for package installs
 sudo dnf makecache
 # Install Dropbox
-dnf install https://www.dropbox.com/download?dl=packages/fedora/nautilus-dropbox-2015.10.28-1.fedora.x86_64.rpm
+sudo dnf install https://www.dropbox.com/download?dl=packages/fedora/nautilus-dropbox-2015.10.28-1.fedora.x86_64.rpm -y
+# Install TeamViewer
+sudo dnf install https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm -y
 # grab all packages to install
 sudo dnf install $(cat ~/fedora.packages) -y
 
