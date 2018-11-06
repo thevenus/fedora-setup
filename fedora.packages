@@ -4,6 +4,7 @@ automake
 binutils
 bison
 dconf-editor
+discord
 flex
 fontforge
 gcc
@@ -34,6 +35,7 @@ remmina
 remmina-plugins-rdp
 shutter
 simplescreenrecorder
+steam
 tree
 chrome-gnome-shell
 ctags
