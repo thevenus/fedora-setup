@@ -3,6 +3,7 @@ autoconf
 automake
 binutils
 bison
+dconf-editor
 flex
 fontforge
 gcc
@@ -12,8 +13,8 @@ glibc-headers
 glibc-devel
 gnome-tweak-tool
 google-chrome-stable
+gparted
 htop
-iproute
 joe
 kernel-devel
 kernel-headers
@@ -24,6 +25,7 @@ make
 mc
 mpv
 multitail
+nano
 net-tools
 openssh-server
 patch
@@ -38,8 +40,6 @@ ctags
 cmake
 clang
 dkms
-gnome-tweak-tool
-nano
 virtualbox
 virtualbox-guest-additions-iso
 virtualbox-ext-pack
