@@ -1,6 +1,5 @@
 #!/usr/bin/bash
 cd ~
-set -e
 # First we setup the repositories so we can install lots of stuff
 # Set Virtual Box repo
 wget https://raw.githubusercontent.com/ChrisTitusTech/fedora-setup/master/fedora.packages
