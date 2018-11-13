@@ -1,8 +1,10 @@
 # fedora-setup
 Setup Script for Fedora
 
-Use the following command to run the script easily in one run:
+Video Walkthrough
+https://www.youtube.com/watch?v=400g2uVV090
 
+Use the following command to run the script easily in one run:
 wget https://raw.githubusercontent.com/ChrisTitusTech/fedora-setup/master/fedora-setup.sh && sudo chmod +x fedora-setup.sh && ./fedora-setup.sh
 
 Below is everything is included in this script:
