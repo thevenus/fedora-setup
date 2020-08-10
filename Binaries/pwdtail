@@ -1,0 +1,7 @@
+#!/bin/bash
+# 
+# name: pwdtail
+# 
+# brief: Returns the last 2 fields of the working directory
+
+pwd|awk -F/ '{nlast = NF -1;print $nlast"/"$NF}'
