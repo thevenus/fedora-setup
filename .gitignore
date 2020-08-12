@@ -1,0 +1,5 @@
+# ignore vim session file
+Session.vim
+
+# ignore .swp files from vim 
+*.swp
