@@ -1,5 +1,3 @@
-autoconf
-automake
 binutils
 bluez
 bluez-libs
@@ -8,8 +6,6 @@ chrome-gnome-shell
 clang
 cmake
 ctags
-dconf-editor
-dkms
 gcc
 gcc-c++
 git
@@ -19,7 +15,6 @@ glibc-headers
 gnome-tweaks
 google-chrome-stable
 gparted
-joe
 kernel-devel
 kernel-headers
 libgomp
