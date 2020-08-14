@@ -1,0 +1,67 @@
+" =============================================================================
+" Vim Plug
+" =============================================================================
+call plug#begin()
+
+" Nord color scheme
+Plug 'arcticicestudio/nord-vim'
+
+" vim-airline plugin & themes(status/tabline)
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" goyo plugin (distraction free writing)
+Plug 'junegunn/goyo.vim'
+
+" vim-eunuch plugin: add some useful unix commands to use natively on Vim
+Plug 'tpope/vim-eunuch'
+
+" vim-visual-multi plugin: create multiple cursors
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+
+" NERDTree plugin: A tree explorer plugin for vim
+Plug 'preservim/nerdtree'
+
+" Plugin for LaTeX 
+Plug 'lervag/vimtex'
+
+call plug#end()
+
+" =============================================================================
+
+" show line numbers
+set number 
+
+" enable soft wrap and DO NOT wrap in the middle of the word
+set wrap
+set linebreak
+
+" enable hard wrap with 80 characters
+set textwidth=90
+
+" move the cursor left/right to move to the previous/next line when the cursor
+" is on the first/last character in the line
+set whichwrap+=<,>,h,l
+
+" Remove toolbar from gVim
+set guioptions-=T
+
+" automatically use the system clipboard for copy and paste (only works in
+" vimx)
+set clipboard=unnamedplus
+
+" This makes vim invoke Latex-Suite when you open a tex file.
+filetype plugin on
+
+" This enables automatic indentation as you type.
+filetype indent on
+
+" Specify tex flavor to avoid ambiguity
+let g:tex_flavor = 'latex'
+
+" Activate color Nord scheme
+colorscheme nord
+
+" vim-airline configuration
+let g:airline#extensions#tabline#formatter = 'default'
+let g:airline#extensions#branch#enabled = 1
