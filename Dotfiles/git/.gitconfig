@@ -1,0 +1,16 @@
+[user]
+	name = thevenus
+	email = fuad.mammadovf7@gmail.com
+[core]
+	editor = vimx
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+[merge]
+	tool = vimdiff
+[credential]
+	helper = cache
