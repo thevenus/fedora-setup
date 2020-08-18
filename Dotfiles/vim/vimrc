@@ -25,14 +25,11 @@ Plug 'preservim/nerdtree'
 " Plugin for LaTeX 
 Plug 'lervag/vimtex'
 
-<<<<<<< HEAD
-=======
 " Markdown support
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
->>>>>>> master
 call plug#end()
 
 " =============================================================================
@@ -73,8 +70,6 @@ colorscheme nord
 " vim-airline configuration
 let g:airline#extensions#tabline#formatter = 'default'
 let g:airline#extensions#branch#enabled = 1
-<<<<<<< HEAD
-=======
 
 " Markdown Configuration
 
@@ -161,5 +156,3 @@ let g:mkdp_port = ''
 " preview page title
 " ${name} will be replace with the file name
 let g:mkdp_page_title = '「${name}」'
-
->>>>>>> master
