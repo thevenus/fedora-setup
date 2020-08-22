@@ -30,6 +30,9 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
+" Todo.txt-vim plugin for managing tasks
+Plug 'freitass/todo.txt-vim'
+
 call plug#end()
 
 " =============================================================================
@@ -54,6 +57,9 @@ set guioptions-=T
 " automatically use the system clipboard for copy and paste (only works in
 " vimx)
 set clipboard=unnamedplus
+
+" solve ctrl+arrow_key problem
+set term=xterm-256color
 
 " This makes vim invoke Latex-Suite when you open a tex file.
 filetype plugin on
@@ -96,7 +102,7 @@ let g:mkdp_command_for_global = 0
 " set to 1, preview server available to others in your network
 " by default, the server listens on localhost (127.0.0.1)
 " default: 0
-let g:mkdp_open_to_the_world = 0
+let g:mkdp_open_to_the_world = 1
 
 " use custom IP to open preview page
 " useful when you work in remote vim and preview on local browser
