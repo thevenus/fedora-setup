@@ -67,6 +67,9 @@ export GROFF_NO_SGR=1         # For Konsole and Gnome-terminal
 # Set standard width size for manpages
 export MANWIDTH=80
 
+# Password Store directory 
+export PASSWORD_STORE_DIR=/home/fuad/Dropbox/.password-store
+
 #######################################################
 # GENERAL ALIAS'S
 #######################################################
@@ -90,6 +93,7 @@ alias bd='cd "$OLDPWD"'
 alias rmd='/bin/rm  --recursive --verbose '
 
 # Alias's for multiple directory listing commands
+alias lsa='ls -lA' # list everything
 alias lx='ls -lXBh' # sort by extension
 alias lk='ls -lSrh' # sort by size
 alias lc='ls -lcrh' # sort by change time
@@ -121,6 +125,9 @@ alias mkgz='tar -cvzf'
 alias untar='tar -xvf'
 alias unbz2='tar -xvjf'
 alias ungz='tar -xvzf'
+
+# todo.txt alias 
+alias t='todo.sh'
 
 #######################################################
 # SPECIAL FUNCTIONS
