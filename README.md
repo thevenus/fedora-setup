@@ -24,8 +24,7 @@ fresh installation.
 - PackageLists  -  contains lists of DNF and Flatpak packages to install
 
 # usage
-$ means command does not require root access. # means command will require root access, so
-run these commands with 'sudo'
+> Note: $ means command does not require root access. # means command will require root access, so run these commands with 'sudo'
 ```
 $ git clone https://github.com/thevenus/fedora-setup.git 
 ```
