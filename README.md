@@ -27,7 +27,7 @@ fresh installation.
 $ means command does not require root access. # means command will require root access, so
 run these commands with 'sudo'
 ```
-$ git clone 
+$ git clone https://github.com/thevenus/fedora-setup.git 
 ```
 ### general setup 
 This will install packages, setup OS, and link dotfiles. 
