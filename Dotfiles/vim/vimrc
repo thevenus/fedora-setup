@@ -4,7 +4,7 @@
 call plug#begin()
 
 " Nord color scheme
-Plug 'arcticicestudio/nord-vim'
+" Plug 'arcticicestudio/nord-vim'
 
 " vim-airline plugin & themes(status/tabline)
 Plug 'vim-airline/vim-airline'
@@ -71,7 +71,7 @@ filetype indent on
 let g:tex_flavor = 'latex'
 
 " Activate color Nord scheme
-colorscheme nord
+colorscheme desert
 
 " vim-airline configuration
 let g:airline#extensions#tabline#formatter = 'default'
