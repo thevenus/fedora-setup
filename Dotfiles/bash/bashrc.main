@@ -20,12 +20,6 @@ export PATH
 # EXPORTS
 #######################################################
 
-# Avoid warning messages of howdy
-export OPENCV_LOG_LEVEL=ERROR
-
-# Disable the bell
-if [[ $iatest > 0 ]]; then bind "set bell-style visible"; fi
-
 # Expand the history size
 export HISTFILESIZE=10000
 export HISTSIZE=500
@@ -40,8 +34,8 @@ shopt -s histappend
 PROMPT_COMMAND='history -a'
 
 # Editors
-export EDITOR=/usr/bin/vimx
-export VISUAL=/usr/bin/codium 
+# export EDITOR=/usr/bin/vimx
+# export VISUAL=/usr/bin/codium 
 
 # Solve color problem with tmux
 export TERM=screen-256color
@@ -67,14 +61,9 @@ export GROFF_NO_SGR=1         # For Konsole and Gnome-terminal
 # Set standard width size for manpages
 export MANWIDTH=80
 
-# Password Store directory 
-export PASSWORD_STORE_DIR=/home/fuad/Dropbox/.password-store
-
 #######################################################
 # GENERAL ALIAS'S
 #######################################################
-
-
 alias sudo='sudo '
 
 alias cls='clear'
@@ -126,9 +115,6 @@ alias untar='tar -xvf'
 alias unbz2='tar -xvjf'
 alias ungz='tar -xvzf'
 
-# todo.txt alias 
-alias t='todo.sh'
-
 #######################################################
 # SPECIAL FUNCTIONS
 #######################################################
@@ -165,7 +151,9 @@ mkcd ()
 # SHELL PROMPT 
 #######################################################
 
-# blue colored
-# current dir 
 # branch name (if dir is a git repo)
-export PS1='\[\e[0;34m\]\W$(__git_ps1 " (%s)") \[\e[0m\]→ '
+# export PS1='\[\e[0;34m\]\W$(__git_ps1 " (%s)") \[\e[0m\]→ '
+# export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+export PROMPT_GIT_BRANCH='$(__git_ps1 " (%s)")'
+export PROMPT_GIT_COLOR=36
+export PROMPT_DIRECTORY='\W'
