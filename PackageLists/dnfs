@@ -1,8 +1,4 @@
 binutils
-bluez
-bluez-libs
-bluez-tools
-chrome-gnome-shell
 clang
 cmake
 ctags
@@ -12,8 +8,6 @@ git
 glib
 glibc-devel
 glibc-headers
-gnome-tweaks
-google-chrome-stable
 gparted
 kernel-devel
 kernel-headers
@@ -23,13 +17,10 @@ libinput-utils
 libtool
 make
 mc
-meson
-mpv
 multitail
 nano
 neovim
 net-tools
-nodejs
 openocd
 openssh-server
 patch
